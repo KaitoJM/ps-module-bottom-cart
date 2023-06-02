@@ -140,7 +140,7 @@ class PcBottomCart extends Module
                         'options' => [
                             'query' => $options,
                             'id' => 'id',
-                            'name' => 'name'
+                            'name' => 'name',
                         ],
                     ],
                 ],
