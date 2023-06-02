@@ -16,12 +16,12 @@
 if (!defined('_PS_VERSION_')) {
     exit;
 }
-class Pc_bottomCart extends Module
+class PcBottomCart extends Module
 {
     public function __construct()
     {
         $this->module_key = 'f0ae3ad939b4584d860bacee62de8b46';
-        $this->name = 'pc_bottomcart';
+        $this->name = 'pcbottomcart';
         $this->tab = 'front_office_features';
         $this->version = '1.0.0';
         $this->author = 'PrestaCream';
@@ -205,14 +205,14 @@ class Pc_bottomCart extends Module
             'cart_total' => $formattedTotal,
         ]);
 
-        return $this->display(__FILE__, 'pc_bottomcart.tpl');
+        return $this->display(__FILE__, 'pcbottomcart.tpl');
     }
 
     public function hookActionFrontControllerSetMedia()
     {
         $this->context->controller->registerStylesheet(
             'mymodule-style',
-            'modules/' . $this->name . '/views/css/pc_bottomcart.css',
+            'modules/' . $this->name . '/views/css/pcbottomcart.css',
             [
                 'media' => 'all',
                 'priority' => 1000,
@@ -220,7 +220,7 @@ class Pc_bottomCart extends Module
         );
         $this->context->controller->registerJavascript(
             'mymodule-javascript',
-            'modules/' . $this->name . '/views/js/pc_bottomcart.js',
+            'modules/' . $this->name . '/views/js/pcbottomcart.js',
             [
                 'position' => 'bottom',
                 'priority' => 1000,
