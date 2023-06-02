@@ -23,7 +23,7 @@ class PcBottomCart extends Module
         $this->module_key = 'f0ae3ad939b4584d860bacee62de8b46';
         $this->name = 'pcbottomcart';
         $this->tab = 'front_office_features';
-        $this->version = '1.0.1';
+        $this->version = '1.0.2';
         $this->author = 'PrestaCream';
         $this->need_instance = 0;
         $this->ps_versions_compliancy = [
